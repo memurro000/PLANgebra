@@ -1,4 +1,5 @@
-#PLANgebra                                                                                                   
+# PLANgebra
+                                                                                                   
 ## A library for C++ that represents interaction with vectors and matrices                                                 
 
 ## Usage 
