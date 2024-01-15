@@ -51,7 +51,7 @@ int main()
     return 0;
 }
 ```
-`g++ Main.cpp PLANgebra.lib`
+```g++ Main.cpp PLANgebra.lib```
 
 <details>
 <summary><b> Result: </b> </summary>
