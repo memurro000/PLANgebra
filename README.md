@@ -51,7 +51,9 @@ int main()
     return 0;
 }
 ```
-```g++ Main.cpp PLANgebra.lib```
+```
+g++ Main.cpp PLANgebra.lib
+```
 
 <details>
 <summary><b> Result: </b> </summary>
@@ -76,13 +78,3 @@ You are trying to summ up Vector of dimension 5 with Vector of dimension 3
 ## Installation                                                                                             
 Simply place `PLANgebra.lib` and `PLANgebra.h` in your project directory or anywhere you want, put `#include "[way_to_PLANgebra.h]"]` to your project and then you can use it!
 
-
-
-~                                                                                                                                          
-~                                                                                                                                          
-~                                                                                                                                          
-~                                                                                                                                          
-~                                                                                                                                          
-~                                                                                                                                          
-~                                                                                                                                          
-~                                                                
