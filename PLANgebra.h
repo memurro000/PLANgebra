@@ -1,4 +1,3 @@
-
 #include <cstddef>
 #include <iostream>
 namespace pla
@@ -8,7 +7,7 @@ namespace pla
     class Vector
     {
         private:
-            int dim;
+            int *dim;
             f64 *val;
 
         public:
@@ -50,8 +49,8 @@ namespace pla
                     pointer m_ptr;
             };
             
-            iterator begin() noexcept { return iterator(this->val); }
-            iterator end() noexcept { return iterator(this->val + this->dim); }
+            iterator begin() const noexcept { return iterator(this->val); }
+            iterator end() const noexcept { return iterator(this->val + *(this->dim)); }
 
 
             //Null constructor
@@ -81,6 +80,8 @@ namespace pla
             //Gets value at index
             f64 GetAt(int index) const;
 
+            //Finds the length of Vector
+            f64 Length() const;
 
             //Sets whole vector to null value
             void SetNull();
@@ -102,6 +103,20 @@ namespace pla
             Vector operator-(const Vector &a);
 
             Vector &operator-=(const Vector &a);
+
     };
+	    
+    //Finds scalar product of two Vectors
+    f64 ScalarProduct(const Vector &a, const Vector &b);
+
+    //Finds Cos of Angle between two Vectors
+    f64 AngleCos(const Vector &a, const Vector &b);
 
 }
+
+
+
+
+
+
+
