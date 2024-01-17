@@ -2,6 +2,7 @@
 #include <algorithm>
 
 #include "PLANgebra.h"
+#include "PLANgebra.h"
 
 
 int main()

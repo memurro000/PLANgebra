@@ -1,5 +1,9 @@
 #include <cstddef>
 #include <iostream>
+
+#ifndef PLANGEBRA_H
+#define PLANGEBRA_H
+
 namespace pla
 {
     typedef double f64;
@@ -105,7 +109,14 @@ namespace pla
             Vector &operator-=(const Vector &a);
 
     };
-	    
+
+    typedef Vector Row;
+
+    class Matrix
+    {
+
+    };
+
     //Finds scalar product of two Vectors
     f64 ScalarProduct(const Vector &a, const Vector &b);
 
@@ -114,6 +125,7 @@ namespace pla
 
 }
 
+#endif
 
 
 
